@@ -27,7 +27,7 @@ This example adds a second output format that is suitable for the plotter that
 is integrated with the Arduino IDE. To enable that format, simply uncomment the
 ```#define GENERATE_PLOTTER_OUTPUT``` line. Note that the code will scale the
 flow values by a factor of 1000 which changes the unit of the output to
-micro liters per hour; this is done to get the values into a similar range as
+micro liters per minute; this is done to get the values into a similar range as
 the temperature read from the sensor.
 
 The plot should look similar to this:
