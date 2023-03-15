@@ -53,7 +53,7 @@ void loop() {
   int ret = SLF3X.readSample();
   if (ret == 0) {
 #ifdef GENERATE_PLOTTER_OUTPUT
-    // for plotter, we use micro liter per hour so scale it into a
+    // for plotter, we use micro liter per minute so scale it into a
     // similar range as temperature is in; depending on your application,
     // you may want to change the scale factor
     Serial.print(SLF3X.getFlow() * 1000, 1);
